@@ -1,8 +1,8 @@
 cask "abendrot" do
-  version "1.0.2,4"
+  version "1.0.2"
   sha256 "72fc49bbabdd652c088a552e6ba507560f066f51e1d4e10ac21d7b11249a3247"
 
-  url "https://github.com/matthewrball/abendrot/releases/download/v#{version.csv.first}/Abendrot-#{version.csv.first}.dmg",
+  url "https://github.com/matthewrball/abendrot/releases/download/v#{version}/Abendrot-#{version}.dmg",
       verified: "github.com/matthewrball/abendrot/"
   name "Abendrot"
   desc "Free, open-source per-display screen-warmth app"
@@ -10,7 +10,7 @@ cask "abendrot" do
 
   livecheck do
     url "https://raw.githubusercontent.com/matthewrball/abendrot/main/appcast.xml"
-    strategy :sparkle
+    strategy :sparkle, &:short_version
   end
 
   auto_updates true
