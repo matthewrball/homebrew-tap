@@ -1,18 +1,19 @@
-# Matthewrball Tap
+# Abendrot Homebrew Tap
 
-## How do I install these formulae?
+Install the signed, notarized [Abendrot](https://abendrot.app/) Mac app and its
+bundled command-line tool:
 
-`brew install matthewrball/tap/<formula>`
+```sh
+brew install --cask matthewrball/tap/abendrot
+```
 
-Or `brew tap matthewrball/tap` and then `brew install <formula>`.
+The cask downloads the same versioned DMG published on
+[GitHub Releases](https://github.com/matthewrball/abendrot/releases). Abendrot
+uses Sparkle for updates and sends no app telemetry.
 
-Or, in a `brew bundle` `Brewfile`:
+For a `Brewfile`:
 
 ```ruby
 tap "matthewrball/tap"
-brew "<formula>"
+cask "abendrot"
 ```
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
