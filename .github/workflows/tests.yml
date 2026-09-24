@@ -23,6 +23,8 @@ jobs:
       checks: read
       contents: read
       pull-requests: read
+    env:
+      PARALLEL_PROCESSOR_COUNT: "1"
     steps:
       - name: Set up Homebrew
         id: set-up-homebrew
