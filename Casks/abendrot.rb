@@ -2,8 +2,7 @@ cask "abendrot" do
   version "1.1.0"
   sha256 "f4d00d32dc7632d76195756a8df42f02ff9dd0b8c4633fd850c3f3eb80e43f21"
 
-  url "https://github.com/matthewrball/abendrot/releases/download/v#{version}/Abendrot-#{version}.dmg",
-      verified: "github.com/matthewrball/abendrot/"
+  url "https://github.com/matthewrball/abendrot/releases/download/v#{version}/Abendrot-#{version}.dmg"
   name "Abendrot"
   desc "Free, open-source per-display screen-warmth app"
   homepage "https://abendrot.app/"
