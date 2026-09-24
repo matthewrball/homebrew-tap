@@ -1,9 +1,8 @@
 cask "abendrot" do
-  version "1.1.0"
-  sha256 "f4d00d32dc7632d76195756a8df42f02ff9dd0b8c4633fd850c3f3eb80e43f21"
+  version "1.1.2"
+  sha256 "9d7b2717a2e12fdae2a81a6be0aec5f9a29adff4ab3ab643636381bfa1a186f5"
 
-  url "https://github.com/matthewrball/abendrot/releases/download/v#{version}/Abendrot-#{version}.dmg",
-      verified: "github.com/matthewrball/abendrot/"
+  url "https://github.com/matthewrball/abendrot/releases/download/v#{version}/Abendrot-#{version}.dmg"
   name "Abendrot"
   desc "Free, open-source per-display screen-warmth app"
   homepage "https://abendrot.app/"
@@ -14,7 +13,7 @@ cask "abendrot" do
   end
 
   auto_updates true
-  depends_on macos: :sonoma
+  depends_on macos: :monterey
 
   app "Abendrot.app"
   binary "#{appdir}/Abendrot.app/Contents/Helpers/abendrot"
