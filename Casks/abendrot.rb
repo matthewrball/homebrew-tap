@@ -1,6 +1,6 @@
 cask "abendrot" do
-  version "1.1.6"
-  sha256 "0764edabb588cf683ae38a01cb6d7cbb4349177cde864682c9521bf8d59c9a34"
+  version "1.1.7"
+  sha256 "e7199cadf60332be31799587f770b8bd65eec7c91505acd400bfab75e2531c25"
 
   url "https://github.com/matthewrball/abendrot/releases/download/v#{version}/Abendrot-#{version}.dmg"
   name "Abendrot"
